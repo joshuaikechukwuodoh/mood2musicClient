@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* font sizes */
+  --xsmall: 14px;
+  --small: 16px;
+  --medium: 18px;
+  --large: 24px;
+  --xlarge: 32px;
+  --xxlarge: 48px;
+
+  /* font weights */
+  --normal: 400;
+  --semibold: 500;
+  --bold: 600;
+  --extrabold: 700;
+  --black: 900;
+
+  /* colors */
+  --white: #fffae4;
+  --white2: #fffdf5;
+  --black: #222222;
+  --gray: #ccc;
+  --blue: #007bff;
+  --green: #28a745;
+  --yellow: #fcd634;
+  --red: #dc3545;
+  --purple: #6f42c1;
+}
+
+html {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+li,
+ul {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  color: var(--black);
+  transition: color 0.3s ease;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  background-color: var(--white);
+  background-image: url("./assets/ag-square.png");
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: var(--small);
+  font-weight: var(--bold);
+}
+
+.mood-card {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 90%;
+  justify-content: center;
+  padding: 15px 20px;
+  background-color: var(--white2);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 1s ease-in;
+  height: 100px;
+}
+
+.mood-card h3 {
+  color: var(--black);
+  font-size: var(--medium);
+}
+
+.mood-card p {
+  color: var(--black);
+  font-size: var(--small);
+}
+
+.m2m {
+  font-size: 170px;
+  font-weight: 900;
+  color: var(--yellow);
+}
